@@ -7,6 +7,7 @@ function App() {
 
  const [state,setState]=useState(false)
  const [count,setCount]=useState(0)
+ const [color,setColor]=useState("")
 
  useEffect(()=>{
   console.log("mounting")
@@ -26,7 +27,15 @@ function App() {
          
          <button onClick={()=>setCount(count+1)}> increment</button>
          <button onClick={()=>setCount(count-1)}>decrement</button>
-         <h1>count {count} </h1>
+         <h1>count {count} </h1>\
+        
+
+
+        <button onClick={()=>setColor(state)}>color button</button>
+        
+        <div className='noo' style={{ color:"{ color ? black:blue"}}>
+
+        </div>
 
       
     </div>
