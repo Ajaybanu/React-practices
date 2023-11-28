@@ -10,12 +10,13 @@ function App() {
  const [color,setColor]=useState("")
 
  useEffect(()=>{
-  console.log("mounting")
+  console.log("mounting",count)
+  
     return()=>{
-      console.log("unmounting")
+      console.log("unmounting",count)
     }
 
- },[state])
+ },[state,count])
 
 
   return (
